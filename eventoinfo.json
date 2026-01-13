@@ -5,6 +5,6 @@
   "modloader": "Fabric",
   "version_modloader": "0.16.4",
   "version_evento": "1.0.0",
-  "mods_url": "https://raw.githubusercontent.com/.../tecnico_v1/mods.json",
+  "mods_url": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/refs/heads/main/mods.json",
   "recursos_url": "https://raw.githubusercontent.com/.../tecnico_v1/recursos.json"
 }
