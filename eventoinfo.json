@@ -5,6 +5,4 @@
   "modloader": "Fabric",
   "version_modloader": "0.18.4",
   "version_evento": "1.0.0",
-  "mods_url": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/mods.json",
-  "recursos_url": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/recursos.json"
 }
