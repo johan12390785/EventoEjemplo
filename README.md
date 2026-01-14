@@ -21,13 +21,13 @@ Define la identidad de tu evento aquí.
   "nombre": "Gran Evento",
   "foto_url": "LINK_DIRECTO_IMAGEN.png",
   "version_mc": "1.20.1",
-  "modloader": "Fabric",
+  "modloader": "Fabric/Forge/NeoForge",
   "version_modloader": "0.14.22",
   "version_evento": "1.0.0"
 }
 ```
 > **🔄 Actualizaciones:** Cada vez que hagas un cambio en los mods o configs, **aumenta el número** de `version_evento` (ej: de `1.0.0` a `1.0.1`). Esto avisará a los jugadores que deben actualizar.
-
+>**ModLoader:**Eligir uno y escribirlo exactamente como esta en el ejemplo.
 ---
 
 ## 2. Configurar `mods.json` (Modrinth)
