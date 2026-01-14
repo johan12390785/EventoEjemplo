@@ -56,8 +56,8 @@ Aquí colocas los IDs de los mods de **Modrinth**. El Launcher los descargará e
 
 1. Ve a [Modrinth.com](https://modrinth.com).
 2. Busca el mod que quieres.
-3. En la columna de la izquierda, baja hasta **"Technical Information"**.
-4. Busca el campo **"Project ID"**. Ese código raro es el ID.
+3. En la columna de la izquierda, ir a los  **"..."**.
+4. Busca el campo **"Copy ID"**. Ese código raro es el ID.
 
 > **Tip:** Si dejas la versión fija vacía, el Launcher descargará la última versión compatible. Si necesitas una versión específica, pon el ID de esa versión ahí.
 
