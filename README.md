@@ -71,11 +71,10 @@ Aquí van los mods oficiales de la tienda Modrinth.
 ```
 
 ### 🛑 Reglas de Oro para Mods:
-1. **ID:**
-   * **`id`**: Es el código raro (ej: `P7dR8mSH`). **Es obligatorio** para descargar.
+1. **ID:** Es el código del Mod (ej: `P7dR8mSH`). **Obligatorio**.
 2. **Version Fija:**
-   * Déjalo siempre en `""` (vacío). El launcher buscará automáticamente la última versión compatible.
-   * **Solo** pon un número si el mod está roto y necesitas una versión antigua específica.
+   * **Lo normal:** Déjalo en `""` (vacío). El launcher bajará la última versión automáticamente.
+   * **Solo si falla:** Si necesitas una versión vieja específica, ve a Modrinth, busca esa versión y copia **exactamente** el "Version Number" (ej: `1.10.4+1.21.11-fabric`). Copia y pega, no lo escribas a mano.
 
 ---
 
