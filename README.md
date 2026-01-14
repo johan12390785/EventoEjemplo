@@ -1,130 +1,138 @@
 # 🎈 Plantilla de Evento - TecniLauncher
 
-Este repositorio sirve como base para crear nuevos eventos en el Launcher. Sigue esta guía para configurar tu servidor técnico, modpack o evento especial.
+Este repositorio sirve como base para crear nuevos eventos. Sigue esta guía para que los jugadores puedan entrar a tu servidor con un solo clic.
 
-## 📂 Estructura de Archivos
+## 📂 Archivos Necesarios
 
-Para que el evento funcione, necesitas obligatoriamente estos 3 archivos en tu repositorio:
+Para que el evento funcione, necesitas obligatoriamente estos 3 archivos:
 
-* **`eventoinfo.json`** (Datos básicos: nombre, versión, loader)
-* **`mods.json`** (Lista de mods a descargar desde Modrinth)
-* **`recursos.json`** (Configs, texturas o archivos extra)
+* **`eventoinfo.json`** (Nombre, versión del juego, foto)
+* **`mods.json`** (Lista de mods de Modrinth)
+* **`recursos.json`** (Configs, ResourcePacks, Mapas o Mods externos)
 
 ---
 
 ## 1. Configurar `eventoinfo.json`
 
-Este archivo define la identidad del evento.
+Define la identidad de tu evento aquí.
 
 ```json
 {
-  "nombre": "Nombre Del Evento",
-  "foto_url": "LINK_DIRECTO_A_TU_IMAGEN_PNG",
+  "nombre": "Gran Evento",
+  "foto_url": "LINK_DIRECTO_IMAGEN.png",
   "version_mc": "1.20.1",
   "modloader": "Fabric",
   "version_modloader": "0.14.22",
   "version_evento": "1.0.0"
 }
 ```
-
-> **Nota:** El campo `version_evento` sirve para notificar actualizaciones. Si cambias el número, el botón del Launcher cambiará automáticamente a "ACTUALIZAR".
+> **🔄 Actualizaciones:** Cada vez que hagas un cambio en los mods o configs, **aumenta el número** de `version_evento` (ej: de `1.0.0` a `1.0.1`). Esto avisará a los jugadores que deben actualizar.
 
 ---
 
-## 2. Configurar `mods.json`
+## 2. Configurar `mods.json` (Modrinth)
 
-Aquí colocas los IDs de los mods de **Modrinth**. El Launcher los descargará e instalará automáticamente.
+Aquí van los mods oficiales de la tienda Modrinth.
 
 ```json
 {
   "mods": [
-    {
-      "id": "P7dR8mSH",
-      "slug": "fabric-api",
-      "version_fija": ""
+    { 
+      "id": "P7dR8mSH", 
+      "slug": "fabric-api", 
+      "version_fija": "0.92.0+1.20.1" 
     },
-    {
-      "id": "AANobbMI",
-      "slug": "sodium",
-      "version_fija": "mc1.20.1-0.5.3"
+    { 
+      "id": "AANobbMI", 
+      "slug": "sodium", 
+      "version_fija": "" 
+    },
+    { 
+      "id": "Wq5SjeWM", 
+      "slug": "fancymenu", 
+      "version_fija": "" 
+    },
+    { 
+      "id": "J81TRJWm", 
+      "slug": "konkrete", 
+      "version_fija": "" 
+    },
+    { 
+      "id": "CVT4pFB2", 
+      "slug": "melody", 
+      "version_fija": "" 
     }
   ]
 }
 ```
 
-### 🕵️ ¿Cómo consigo el ID del mod?
-
-1. Ve a [Modrinth.com](https://modrinth.com).
-2. Busca el mod que quieres.
-3. En la columna de la derecha, ve a los **"..."**.
-4. Busca el campo **"Copy ID"**. Ese código raro es el ID.
-   ![Mod ID](https://raw.githubusercontent.com/johan12390785/EventoEjemplo/refs/heads/main/ModId.png)
-
-> **Tip:** Si dejas la versión fija vacía, el Launcher descargará la última versión compatible. Si necesitas una versión específica, pon el ID de esa versión ahí.
+### 🛑 Reglas de Oro para Mods:
+1. **ID vs Slug:**
+   * **`id`**: Es el código raro (ej: `P7dR8mSH`). **Es obligatorio** para descargar.
+   * **`slug`**: Es el nombre humano (ej: `fabric-api`). Es solo visual para ti.
+2. **Version Fija:**
+   * Déjalo siempre en `""` (vacío). El launcher buscará automáticamente la última versión compatible.
+   * **Solo** pon un número si el mod está roto y necesitas una versión antigua específica.
 
 ---
 
-## 3. Configurar `recursos.json`
+## 3. Configurar `recursos.json` (Configs y Packs)
 
-Usa esto para descargar configuraciones, resourcepacks, mapas o scripts. El archivo debe ser un **.zip** con enlace de descarga directa.
+Aquí descargas todo lo que NO sea un mod de Modrinth (ResourcePacks, Menús, Configs, Scripts).
+**¡OJO!** Ahora puedes decidir si el archivo se descomprime o no.
+
+### Opción A: Configs, Mapas o Menús (`descomprimir: true`)
+Usa esto si subes un `.zip` que contiene carpetas dentro (ej: carpeta `fancymenu`).
 
 ```json
-[
-  {
-    "nombre": "Pack de Texturas",
-    "url": "https://tusitio.com/serverpack.zip",
-    "destino": "resourcepacks"
-  }
-]
+{
+  "nombre": "Menu Personalizado",
+  "url": "LINK_DE_TU_CONFIG.zip",
+  "destino": "config",
+  "descomprimir": true
+}
 ```
+*El launcher bajará el zip, sacará los archivos y borrará el zip.*
 
-> **Importante:** El `.zip` se descomprimirá automáticamente dentro de la carpeta que indiques en `destino`.
-
----
-
-## 4. Mods Personalizados (No están en Modrinth)
-
-Si necesitas instalar un mod propio o que no existe en la tienda, tienes dos formas de subirlo dependiendo de su peso:
-
-### Opción A: Si el archivo pesa MENOS de 100MB (Rápido)
-Puedes subirlo directamente junto con los archivos de este repositorio.
-
-1. Arrastra tu archivo `.jar` o `.zip` a la lista de archivos en GitHub y dale a "Commit changes".
-2. Haz clic en el archivo que acabas de subir.
-3. Busca el botón que dice **"Raw"** (o "Download") a la derecha.
-4. Haz **Click Derecho** > **Copiar dirección del enlace**.
-
-### Opción B: Si el archivo pesa MÁS de 100MB (GitHub Releases)
-GitHub no permite subir archivos gigantes directamente. Debes usar **Releases** (Soporta hasta 2GB):
-
-1. En tu repositorio, mira a la derecha donde dice **"Releases"** y haz clic en "Create a new release".
-2. Ponle un título (ej: "Mods Pesados") y **arrastra tu archivo** a la zona de subida.
-3. Publica la release.
-4. En la sección "Assets" de la release publicada, haz **Click Derecho** sobre tu archivo y **Copiar dirección del enlace**.
-
----
-
-### 📝 Cómo agregarlo al `recursos.json`
-Independientemente de la opción que uses, pega el enlace que copiaste en tu archivo `recursos.json` apuntando a la carpeta de mods:
-
-**Agrégalo a `recursos.json` así:**
+### Opción B: Resource Packs y Shaders (`descomprimir: false`)
+Usa esto para archivos que Minecraft necesita leer cerrados (sin descomprimir).
 
 ```json
-[
-  {
-    "nombre": "Mod Custom Gigante",
-    "url": "PEGAR_LINK_DE_LA_RELEASE_AQUI.zip",
-    "destino": "mods"
-  }
-]
+{
+  "nombre": "Pack Texturas Realistas",
+  "url": "LINK_DEL_PACK.zip",
+  "destino": "resourcepacks",
+  "descomprimir": false
+}
+```
+*El launcher bajará el archivo y lo dejará guardado tal cual.*
+
+---
+
+## 4. Mods Personalizados (GitHub Releases)
+
+Si tienes un mod propio o muy pesado (>100MB) que no está en la tienda:
+
+1. Ve a la sección **Releases** de este repositorio (a la derecha).
+2. Crea una "New Release" y sube tu archivo `.jar` o `.zip`.
+3. Copia el link de descarga del archivo subido (Click derecho en Assets -> Copiar enlace).
+4. Agrégalo a `recursos.json`:
+
+```json
+{
+  "nombre": "Mi Mod Propio",
+  "url": "PEGAR_LINK_DE_RELEASE.jar",
+  "destino": "mods",
+  "descomprimir": false
+}
 ```
 
 ---
 
-## ⚠️ Errores Comunes (¡LEER!)
+## ⚠️ Errores Frecuentes
 
-1. **La Coma Traicionera:** En los archivos JSON, el **último** elemento de una lista NO debe llevar coma al final. Si la pones, el Launcher dará error.
-
-2. **Repositorio Privado:** Este repositorio debe estar en **PÚBLICO** para que el Launcher pueda leer los archivos. Ve a la configuración de tu repositorio (Settings) y cambia la visibilidad a Public.
-
-3. **Enlaces RAW:** Cuando configures el archivo maestro en tu repositorio principal, asegúrate de usar los enlaces **Raw**. Abre el archivo en GitHub y pulsa el botón que dice "Raw" antes de copiar el link.
+1. **La Coma Final:** En los archivos JSON, el **último** elemento de la lista NO lleva coma.
+   * ✅ `... }, { ... }`
+   * ❌ `... }, { ... },`
+2. **Repositorio Privado:** Asegúrate de que este repositorio esté en **Public** en los Settings.
+3. **Enlaces RAW:** Si subes archivos pequeños directamente al código, usa siempre el botón **"Raw"** antes de copiar el link.
