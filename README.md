@@ -129,7 +129,7 @@ Si tienes un mod propio o muy pesado (>100MB) que no está en la tienda:
   "descomprimir": false
 }
 ```
-**Nota:** Si tu mod pesa menos de 100MB puede ocupar la seccion de recursos.json
+***Nota:** Si tu mod pesa menos de 100MB puede ocupar la seccion de recursos.json*
 ---
 
 ## ⚠️ Errores Frecuentes
