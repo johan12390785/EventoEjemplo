@@ -56,7 +56,7 @@ Aquí colocas los IDs de los mods de **Modrinth**. El Launcher los descargará e
 
 1. Ve a [Modrinth.com](https://modrinth.com).
 2. Busca el mod que quieres.
-3. En la columna de la derecha, ir a los  **"..."**.
+3. En la columna de la derecha, ve a los **"..."**.
 4. Busca el campo **"Copy ID"**. Ese código raro es el ID.
    ![Mod ID](https://raw.githubusercontent.com/johan12390785/EventoEjemplo/refs/heads/main/ModId.png)
 
@@ -79,6 +79,29 @@ Usa esto para descargar configuraciones, resourcepacks, mapas o scripts. El arch
 ```
 
 > **Importante:** El `.zip` se descomprimirá automáticamente dentro de la carpeta que indiques en `destino`.
+
+---
+
+## 4. Mods Personalizados o Archivos Pesados (>100MB)
+
+Si tienes un mod propio (que no está en Modrinth) o un archivo que pesa más de 100MB (el límite normal de GitHub), debes usar **GitHub Releases**.
+
+1. En tu repositorio, mira a la derecha donde dice **"Releases"** y haz clic en "Create a new release".
+2. Ponle un título (ej: "Mods Custom") y **arrastra tu archivo** (.zip o .jar) a la zona de subida (Soporta hasta 2GB).
+3. Publica la release.
+4. En la sección "Assets" de la release publicada, haz **Click Derecho** sobre tu archivo y **Copiar dirección del enlace**.
+
+**Agrégalo a `recursos.json` así:**
+
+```json
+[
+  {
+    "nombre": "Mod Custom Gigante",
+    "url": "PEGAR_LINK_DE_LA_RELEASE_AQUI.zip",
+    "destino": "mods"
+  }
+]
+```
 
 ---
 
