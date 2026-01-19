@@ -15,7 +15,7 @@
     "nombre": "TecniStudio Pack",
     "url": "https://github.com/johan12390785/EventoEjemplo/raw/refs/heads/main/recursos/TecniStudioPack.zip",
     "destino": "resourcepacks",
-    "descomprimir": false
+    "descomprimir": true
   },
   {
     "nombre": "ftbchunks",
