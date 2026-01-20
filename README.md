@@ -1,141 +1,114 @@
-# 🎈 Plantilla de Evento - TecniLauncher
+# 📚 Guía de Publicación de Eventos para TecniLauncher
 
-Este repositorio sirve como base para crear nuevos eventos. Sigue esta guía para que los jugadores puedan entrar a tu servidor de una froma mas facil.
+Bienvenido a la guía oficial para creadores de eventos. Este documento explica cómo alojar y publicar tus eventos (mods, mapas, configs) para que sean accesibles desde **TecniLauncher**.
 
-## 📂 Archivos Necesarios
+## 🛠️ Prerrequisitos
 
-Para que el evento funcione, necesitas obligatoriamente estos 3 archivos:
-
-* **`eventoinfo.json`** (Nombre, versión del juego, foto)
-* **`mods.json`** (Lista de mods de Modrinth)
-* **`recursos.json`** (Configs, ResourcePacks, Mapas o Mods externos)
+Antes de empezar, asegúrate de tener:
+1.  **TecniCreateTools (TCT):** La herramienta para generar la carpeta del evento (`Output`).
+2.  Una cuenta en **GitHub** y/o **GitLab**.
 
 ---
 
-## 1. Configurar `eventoinfo.json`
+## 🚦 Paso 1: El Semáforo de Decisión
 
-Define la identidad de tu evento aquí.
+Dependiendo del tamaño total de tu evento o de tus archivos individuales, debes elegir dónde alojarlo.
 
-```json
-{
-  "nombre": "Gran Evento",
-  "foto_url": "LINK_DIRECTO_IMAGEN.png",
-  "DiscordUrl": "https://discord.gg/TU_CODIGO_AQUI",
-  "version_mc": "1.20.1",
-  "modloader": "Fabric/Forge/NeoForge",
-  "version_modloader": "0.14.22",
-  "version_evento": "1.0.0"
-}
-```
-##**🔄 Protocolo de Actualización (MUY IMPORTANTE)**
-Para evitar que los jugadores descarguen archivos viejos por culpa de la caché de GitHub, sigue siempre este orden:
-
-**Sube los cambios** en mods.json y recursos.json.
-
-**Espera de 6 a 8 minutos** a que los servidores de GitHub procesen y refresquen los archivos.
-
-**Finalmente**, cambia la `version_evento` en este archivo (ej: de `1.0.0` a `1.0.1`).
-
-**Nota:** Cambiar la versión de evento es lo que "despierta" al Launcher. Si lo haces al final, te aseguras de que cuando el Launcher busque los mods, estos ya estén disponibles y actualizados.
----
-
-## 2. Configurar `mods.json` (Modrinth)
-
-Aquí van los mods oficiales de la tienda Modrinth.
-
-```json
-{
-  "mods": [
-    { 
-      "id": "P7dR8mSH", 
-      "version_fija": "0.92.0+1.20.1" 
-    },
-    { 
-      "id": "AANobbMI", 
-      "version_fija": "" 
-    },
-    { 
-      "id": "Wq5SjeWM", 
-      "version_fija": "" 
-    },
-    { 
-      "id": "J81TRJWm", 
-      "version_fija": "" 
-    },
-    { 
-      "id": "CVT4pFB2", 
-      "version_fija": "" 
-    }
-  ]
-}
-
-```
-
-### 🛑 Reglas de Oro para Mods:
-1. **ID:** Es el código del Mod (ej: `P7dR8mSH`). **Obligatorio**.
-2. **Version Fija:**
-   * **Lo normal:** Déjalo en `""` (vacío). El launcher bajará la última versión automáticamente.
-   * **Solo si falla:** Si necesitas una versión vieja específica, ve a Modrinth, busca esa versión y copia **exactamente** el "Version Number" (ej: `1.10.4+1.21.11-fabric`). Copia y pega, no lo escribas a mano.
+| Ruta | Plataforma | ¿Cuándo usarla? | Límite de Archivo | Dificultad |
+| :--- | :--- | :--- | :--- | :--- |
+| **A** | **GitHub** | Eventos ligeros, mods técnicos, actualizaciones pequeñas. | **Máx 25 MB** por archivo | ⭐ Fácil |
+| **B** | **GitLab** | Eventos pesados (Pixelmon, Cobblemon), ResourcePacks HD, música. | **Sin límite práctico** (Git LFS) | ⭐⭐ Media |
 
 ---
 
-## 3. Configurar `recursos.json` (Configs y Packs)
+## 🟢 Ruta A: GitHub (Para Eventos Ligeros)
+*Sigue este camino si ningún archivo de tu evento supera los 25MB.*
 
-Aquí descargas todo lo que NO sea un mod de Modrinth (ResourcePacks, Menús, Configs, Scripts).
-**¡OJO!** Ahora puedes decidir si el archivo se descomprime o no.
+1.  **Crea un Repositorio:**
+    * Ve a [github.com/new](https://github.com/new).
+    * Ponle nombre a tu evento.
+    * **IMPORTANTE:** Marca la visibilidad como **Public**.
+    * Crea el repositorio.
 
-### Opción A: Configs, Mapas o Menús (`descomprimir: true`)
-Usa esto si subes un `.zip` que contiene carpetas dentro (ej: carpeta `fancymenu`).
+2.  **Sube los Archivos:**
+    * En tu nuevo repositorio, haz clic en **Add file** > **Upload files**.
+    * Arrastra la carpeta completa de tu evento (generada por TCT).
+    * Espera a que carguen y haz clic en el botón verde **Commit changes**.
 
-```json
-{
-  "nombre": "Menu Personalizado",
-  "url": "LINK_DE_TU_CONFIG.zip",
-  "destino": "config",
-  "descomprimir": true
-}
-```
-*El launcher bajará el zip, sacará los archivos y borrará el zip.*
-
-### Opción B: Resource Packs y Shaders (`descomprimir: false`)
-Usa esto para archivos que Minecraft necesita leer cerrados (sin descomprimir).
-
-```json
-{
-  "nombre": "Pack Texturas Realistas",
-  "url": "LINK_DEL_PACK.zip",
-  "destino": "resourcepacks",
-  "descomprimir": false
-}
-```
-*El launcher bajará el archivo y lo dejará guardado tal cual.*
+3.  **Obtén el Link Maestro:**
+    * Navega dentro de las carpetas hasta encontrar el archivo `evento_master.json`.
+    * Haz clic en el botón **Raw** (arriba a la derecha del código).
+    * Copia la URL del navegador.
+    * **[Ve al Paso Final](#-paso-final-conectar-al-launcher)**.
 
 ---
 
-## 4. Mods Personalizados (GitHub Releases)
+## 🔴 Ruta B: GitLab (Para Eventos Pesados)
+*Sigue este camino si tienes archivos grandes (+25MB). GitLab permite subir gigabytes de datos sin problemas usando las herramientas adecuadas.*
 
-Si tienes un mod propio o muy pesado (>100MB) que no está en la tienda:
+### 1. Preparación del Entorno (En la Web)
+GitLab organiza los proyectos en "Grupos". Para que tu evento sea accesible, **el Grupo debe ser Público**.
 
-1. Ve a la sección **Releases** de este repositorio (a la derecha).
-2. Crea una "New Release" y sube tu archivo `.jar` o `.zip`.
-3. Copia el link de descarga del archivo subido (Click derecho en Assets -> Copiar enlace).
-4. Agrégalo a `recursos.json`:
+1.  Ve a [gitlab.com](https://gitlab.com).
+2.  En el menú, ve a **Groups** > **New Group** > **Create group**.
+    * **Nombre:** El nombre de tu Studio o Equipo.
+    * **Visibility Level:** Marca **Public** (Obligatorio).
+3.  Dentro del Grupo, haz clic en **New Project** > **Create blank project**.
+    * **Nombre:** El nombre del evento.
+    * **Visibility:** Marca **Public**.
 
-```json
-{
-  "nombre": "Mi Mod Propio",
-  "url": "PEGAR_LINK_DE_RELEASE.jar",
-  "destino": "mods",
-  "descomprimir": false
-}
-```
-***Nota:** Si tu mod pesa menos de 100MB puede ocupar la seccion de recursos.json*
+### 2. Herramientas de Subida
+No uses la web para subir archivos gigantes (se colgará). Usaremos **GitHub Desktop** (compatible con GitLab).
+
+1.  Descarga e instala [GitHub Desktop](https://desktop.github.com/).
+2.  Ve a **File** > **Clone Repository**.
+3.  Pega la URL HTTPS de tu proyecto de GitLab (ej: `https://gitlab.com/MiStudio/EventoZombie.git`).
+4.  Haz clic en **Clone**.
+
+> **🔐 ¿Te pide contraseña y falla?**
+> GitLab ya no usa tu contraseña de inicio de sesión para aplicaciones externas. Necesitas un **Token**:
+> 1. Ve a GitLab > User Settings (tu foto) > **Access Tokens**.
+> 2. Crea un nuevo token (marca todas las casillas de permisos).
+> 3. **Copia el código que empieza por `glpat-...`**.
+> 4. Usa ese código como contraseña en GitHub Desktop.
+
+### 3. Subir los Archivos
+1.  En GitHub Desktop, haz clic en el botón **Show in Explorer** (Mostrar en Explorador).
+2.  Se abrirá una carpeta vacía. **Copia y Pega** ahí dentro la carpeta `Output` que generó la herramienta TCT.
+3.  Vuelve a GitHub Desktop. Verás todos tus archivos listados en verde.
+4.  **Hacer Commit (Guardar):**
+    * Abajo a la izquierda, escribe un título (ej: "Versión 1.0").
+    * Haz clic en el botón azul **Commit to main**.
+5.  **Hacer Push (Subir):**
+    * Haz clic en el botón **Push origin** (arriba a la derecha).
+    * *Espera a que termine la barra de carga.*
+
+### 4. Obtener el Link Maestro
+1.  Vuelve a tu proyecto en la web de GitLab.
+2.  Entra en la carpeta del evento hasta ver `evento_master.json`.
+3.  Haz clic en el botón **Open Raw** (icono de descarga 📥 a la derecha).
+4.  Copia la URL del navegador.
+
 ---
 
-## ⚠️ Errores Frecuentes
+## 🏁 Paso Final: Conectar al Launcher
 
-1. **La Coma Final:** En los archivos JSON, el **último** elemento de la lista NO lleva coma.
-   * ✅ `... }, { ... }`
-   * ❌ `... }, { ... },`
-2. **Repositorio Privado:** Asegúrate de que este repositorio esté en **Public** en los Settings.
-3. **Enlaces RAW:** Si subes archivos pequeños directamente al código, usa siempre el botón **"Raw"** antes de copiar el link.
+Independientemente de si usaste GitHub o GitLab, ahora tienes un **Link Raw** que apunta a tu `evento_master.json`.
+
+1.  Envía este link al Administrador de **TecniLauncher**.
+2.  El administrador lo agregará al archivo `index_eventos.json` en el repositorio principal.
+3.  **¡Listo!** El evento aparecerá automáticamente en el Launcher de todos los jugadores.
+
+---
+
+## ❓ Solución de Problemas Comunes
+
+**El Launcher da error "404 Not Found" al intentar descargar.**
+* Verifica que el repositorio (y el Grupo en GitLab) esté en modo **Public**.
+* Asegúrate de que el link copiado sea el **Raw** (debe empezar por `raw.githubusercontent...` o `gitlab.com/.../raw/...`).
+
+**GitHub Desktop pide credenciales en bucle.**
+* Tu contraseña normal no funciona. Debes generar un **Access Token** en tu perfil de GitLab y usarlo como contraseña.
+
+**Error al subir en GitHub Web: "File is too big".**
+* Estás intentando subir un archivo de más de 25MB por la web. Debes usar la **Ruta B (GitLab + GitHub Desktop)**.
