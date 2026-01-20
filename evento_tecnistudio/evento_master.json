@@ -1,0 +1,365 @@
+{
+  "Id": "evento_tecnistudio",
+  "Titulo": "HYPOXIA",
+  "VersionEvento": "1.0",
+  "VersionMinecraft": "1.20.1",
+  "Loader": "Forge",
+  "VersionLoader": "47.4.13",
+  "MemoriaMinima": 5120,
+  "UrlIcono": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/foto.png",
+  "UrlFondo": null,
+  "DiscordLink": "https://discord.gg/adhVwrHbrJ",
+  "Archivos": [
+    {
+      "Nombre": "[1.20.1] SecurityCraft v1.10.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/[1.20.1] SecurityCraft v1.10.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/[1.20.1] SecurityCraft v1.10.1.jar",
+      "HashSHA1": "98e4af60aa0f272105b7ffcdf154d7ab670a73bc",
+      "TamanoBytes": 4769715,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "appleskin-forge-mc1.20.1-2.5.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "HashSHA1": "81919356f84eab14258db98924b66c3c38e372b1",
+      "TamanoBytes": 47428,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "architectury-9.2.14-forge.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/architectury-9.2.14-forge.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/architectury-9.2.14-forge.jar",
+      "HashSHA1": "a52918a500ff421180a1cbd1a0cabee712134ec4",
+      "TamanoBytes": 580602,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "BiomesOPlenty-1.20.1-18.0.0.592.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/BiomesOPlenty-1.20.1-18.0.0.592.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/BiomesOPlenty-1.20.1-18.0.0.592.jar",
+      "HashSHA1": "15072eb39c35a3f845d4bb04690d4b7f1808a980",
+      "TamanoBytes": 21800460,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "coroutil-forge-1.20.1-1.3.7.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/coroutil-forge-1.20.1-1.3.7.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/coroutil-forge-1.20.1-1.3.7.jar",
+      "HashSHA1": "7f5f0b62a638b6053c95919cbe8c2bea2e0c93d0",
+      "TamanoBytes": 64187,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "corpse-forge-1.20.1-1.0.23.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/corpse-forge-1.20.1-1.0.23.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/corpse-forge-1.20.1-1.0.23.jar",
+      "HashSHA1": "843b16ca88bc5c390bb22a2a84437e6bffdd43dd",
+      "TamanoBytes": 245644,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "create-1.20.1-6.0.8.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/create-1.20.1-6.0.8.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/create-1.20.1-6.0.8.jar",
+      "HashSHA1": "b13d912b9247a38d66d11598c121442585a1c1e9",
+      "TamanoBytes": 19170905,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "embeddium-0.3.31+mc1.20.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/embeddium-0.3.31+mc1.20.1.jar",
+      "HashSHA1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+      "TamanoBytes": 1320675,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "fancymenu_forge_3.8.1_MC_1.20.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/fancymenu_forge_3.8.1_MC_1.20.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/fancymenu_forge_3.8.1_MC_1.20.1.jar",
+      "HashSHA1": "1fef1d8ab0dc2dec116bc6d6cb6f789fd33b23b0",
+      "TamanoBytes": 4472193,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "FarmersDelight-1.20.1-1.2.9.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/FarmersDelight-1.20.1-1.2.9.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/FarmersDelight-1.20.1-1.2.9.jar",
+      "HashSHA1": "ca9417c369e75d38dacdac59937223e5f6adcc18",
+      "TamanoBytes": 2978080,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "ferritecore-6.0.1-forge.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/ferritecore-6.0.1-forge.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/ferritecore-6.0.1-forge.jar",
+      "HashSHA1": "417fb6ce8f52abf40bd9d0390371790f9576f8ba",
+      "TamanoBytes": 123034,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "ftb-chunks-forge-2001.3.6.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/ftb-chunks-forge-2001.3.6.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/ftb-chunks-forge-2001.3.6.jar",
+      "HashSHA1": "7fde7917655a3356cab92f17ad2bca34962c4928",
+      "TamanoBytes": 1158842,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "ftb-library-forge-2001.2.12.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/ftb-library-forge-2001.2.12.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/ftb-library-forge-2001.2.12.jar",
+      "HashSHA1": "7f36ec4af42ad1d69872c58022e93a9d1b9c82b7",
+      "TamanoBytes": 780523,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "ftb-teams-forge-2001.3.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/ftb-teams-forge-2001.3.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/ftb-teams-forge-2001.3.1.jar",
+      "HashSHA1": "c2af94e0b86631cb75daa8de2377ff72527651ca",
+      "TamanoBytes": 248592,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "improvedmobs-1.20.1-1.13.6-forge.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/improvedmobs-1.20.1-1.13.6-forge.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/improvedmobs-1.20.1-1.13.6-forge.jar",
+      "HashSHA1": "e24ff44724300d441b2d615c2c7bf010bc8436f5",
+      "TamanoBytes": 335525,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "jei-1.20.1-forge-15.20.0.112.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/jei-1.20.1-forge-15.20.0.112.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/jei-1.20.1-forge-15.20.0.112.jar",
+      "HashSHA1": "f12b3781af6337794ae6e010420a97585360ea2f",
+      "TamanoBytes": 1385600,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "HashSHA1": "2019d821bed9071daabed43979433a5473ceee49",
+      "TamanoBytes": 625185,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "kubejsadditions-forge-4.3.4.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/kubejsadditions-forge-4.3.4.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/kubejsadditions-forge-4.3.4.jar",
+      "HashSHA1": "c2720e589a292d5d168ef71a57f5dc3436db96b1",
+      "TamanoBytes": 321976,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "kubejs-create-forge-2001.3.0-build.8.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/kubejs-create-forge-2001.3.0-build.8.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/kubejs-create-forge-2001.3.0-build.8.jar",
+      "HashSHA1": "cbeb6643d1cea979a7e01c87cfb08b9210a1c393",
+      "TamanoBytes": 30960,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "kubejs-forge-2001.6.5-build.16.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/kubejs-forge-2001.6.5-build.16.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/kubejs-forge-2001.6.5-build.16.jar",
+      "HashSHA1": "93fcf0eacc5dc08a4f719eaaed1dc93f0dc80f66",
+      "TamanoBytes": 1654660,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "lexiconfig-forge-1.4.18-1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/lexiconfig-forge-1.4.18-1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/lexiconfig-forge-1.4.18-1.jar",
+      "HashSHA1": "1c10e44a30f9cf6c453a737657763fcdfd620ac2",
+      "TamanoBytes": 54205,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "lostcities-1.20-7.4.11.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/lostcities-1.20-7.4.11.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/lostcities-1.20-7.4.11.jar",
+      "HashSHA1": "4609cbaa8cf3c2b1abb55e88444d5d6c208bcf45",
+      "TamanoBytes": 1253469,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "mcef-forge-2.1.6-1.20.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/mcef-forge-2.1.6-1.20.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/mcef-forge-2.1.6-1.20.1.jar",
+      "HashSHA1": "6d9fa1433d509be242d1d74282d02a0fbebde110",
+      "TamanoBytes": 218417,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "HashSHA1": "e0942d396a70c09038e6c2e5e1da6505178249b8",
+      "TamanoBytes": 37178,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "Paraglider-forge-20.1.3.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/Paraglider-forge-20.1.3.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/Paraglider-forge-20.1.3.jar",
+      "HashSHA1": "51fdf94686fc847515e6de8a6c9fd4dab3466ea5",
+      "TamanoBytes": 589055,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "HashSHA1": "16808f94a41d45d8e986b4e4ea6b02ba57fa058a",
+      "TamanoBytes": 181437,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "rhino-forge-2001.2.3-build.10.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/rhino-forge-2001.2.3-build.10.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/rhino-forge-2001.2.3-build.10.jar",
+      "HashSHA1": "c83c9b719a6bab33fbd2b3f2f680eb3adbfc1aa1",
+      "TamanoBytes": 1798244,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "simplevoicechat_broadcast-mc1.20.1-1.0.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/simplevoicechat_broadcast-mc1.20.1-1.0.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/simplevoicechat_broadcast-mc1.20.1-1.0.1.jar",
+      "HashSHA1": "0e5a9ccb497c0251ba0fce10e265989fb13a8a80",
+      "TamanoBytes": 7302,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "simplylight-1.20.1-1.4.6-build.50.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/simplylight-1.20.1-1.4.6-build.50.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/simplylight-1.20.1-1.4.6-build.50.jar",
+      "HashSHA1": "cfd851ffd2c3b451a96a19207dc6e084c1dfec73",
+      "TamanoBytes": 555625,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "StorageDrawers-forge-1.20.1-12.14.3.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/StorageDrawers-forge-1.20.1-12.14.3.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/StorageDrawers-forge-1.20.1-12.14.3.jar",
+      "HashSHA1": "afca74c6e18883632e74e15a549004bfca245a90",
+      "TamanoBytes": 1143623,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "tacz-1.20.1-1.1.7-hotfix.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/tacz-1.20.1-1.1.7-hotfix.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/tacz-1.20.1-1.1.7-hotfix.jar",
+      "HashSHA1": "7d4f578a42c9b880744ea6058a495847aac9e4c3",
+      "TamanoBytes": 52425650,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "tenshilib-1.20.1-1.7.6-forge.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/tenshilib-1.20.1-1.7.6-forge.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/tenshilib-1.20.1-1.7.6-forge.jar",
+      "HashSHA1": "4a8f6ac745297430e64b50466f338c2b2aa8b101",
+      "TamanoBytes": 465737,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "HashSHA1": "3bd99fb59e8b06b04e78b5153790c1e08b2be5dc",
+      "TamanoBytes": 107532,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "voicechat-forge-1.20.1-2.6.11.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/voicechat-forge-1.20.1-2.6.11.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/voicechat-forge-1.20.1-2.6.11.jar",
+      "HashSHA1": "672aeb74607003370f5724bd2048e4d9d585c799",
+      "TamanoBytes": 4892131,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "wastify-1.20-3.0.0.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/wastify-1.20-3.0.0.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/wastify-1.20-3.0.0.jar",
+      "HashSHA1": "7818ae98b1d5fc01cb5bcc0611a6d5c075b06cfd",
+      "TamanoBytes": 15556,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "zombieawareness-1.20.1-1.13.1.jar",
+      "Tipo": "mod",
+      "RutaRelativa": "mods/zombieawareness-1.20.1-1.13.1.jar",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/mods/zombieawareness-1.20.1-1.13.1.jar",
+      "HashSHA1": "173c30c8918da57be9398b3687ea19a81455c2c1",
+      "TamanoBytes": 291139,
+      "Descomprimir": false
+    },
+    {
+      "Nombre": "fancymenu.zip",
+      "Tipo": "config",
+      "RutaRelativa": "config/fancymenu.zip",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/config/fancymenu.zip",
+      "HashSHA1": "83d3b3adffb1565c21a14146576138492c483638",
+      "TamanoBytes": 9941756,
+      "Descomprimir": true
+    },
+    {
+      "Nombre": "kube.zip",
+      "Tipo": "otro",
+      "RutaRelativa": "kubejs/kube.zip",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/kubejs/kube.zip",
+      "HashSHA1": "f5adc2b2b0907dce1eb7a0514b9e597306220d31",
+      "TamanoBytes": 7654,
+      "Descomprimir": true
+    },
+    {
+      "Nombre": "TecniStudioPack.zip",
+      "Tipo": "resourcepack",
+      "RutaRelativa": "resourcepacks/TecniStudioPack.zip",
+      "UrlDescarga": "https://raw.githubusercontent.com/johan12390785/EventoEjemplo/main/evento_tecnistudio/resourcepacks/TecniStudioPack.zip",
+      "HashSHA1": "7784581a79ebd7b833de3a8f0cfacdb650175e57",
+      "TamanoBytes": 501340,
+      "Descomprimir": true
+    }
+  ]
+}
